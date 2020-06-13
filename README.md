@@ -107,7 +107,9 @@ A Hook is a special function that lets you “hook into” React features. For e
 
 
 
-# First Application
+# The First Application
+
+## The Application bootstrap flow
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -153,3 +155,11 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## What happens when we run 'yarn start'
+
+In package.json we have  `"scripts": { "start": "react-scripts start"}`
+
+When `yarn start` is executed it runs the `start.js` script under  node_modules->react-scripts->scripts
+
+`start.js` script is responible for initializing the configuration and starting `WebpackDevServer` and launching the application in the browser.
