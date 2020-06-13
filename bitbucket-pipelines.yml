@@ -13,4 +13,4 @@ pipelines:
         script: # Modify the commands below to build your repository.
           - yarn install
           - yarn test
-          - yarn start
+#          - yarn start
